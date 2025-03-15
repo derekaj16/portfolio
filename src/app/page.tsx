@@ -1,3 +1,6 @@
+import { ArrowRight } from 'lucide-react'
+import Link from 'next/link'
+
 export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px]  justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
@@ -10,21 +13,52 @@ export default function Home() {
             <h1 className="text-5xl text-primary font-semibold">
               Derek Johnson
             </h1>
-            <div className="text-gray-400">
+            <div className="text-muted-foreground">
               My portfolio is simple so I can focus on things that actually
               matter.
             </div>
           </div>
 
-          <div>
+          <Link
+            href="/education"
+            className="group flex flex-row items-center gap-1 w-fit"
+          >
             <h2>Education</h2>
-          </div>
-          <div>
+            <ArrowRight
+              size={16}
+              className="group-hover:opacity-100 opacity-0 transition group-hover:translate-x-1"
+            />
+          </Link>
+          <Link
+            href="/experience"
+            className="group flex flex-row items-center gap-1 w-fit"
+          >
             <h2>Experience</h2>
-          </div>
-          <div>
+            <ArrowRight
+              size={16}
+              className="group-hover:opacity-100 opacity-0 transition group-hover:translate-x-1"
+            />
+          </Link>
+          <Link
+            href="/values"
+            className="group flex flex-row items-center gap-1 w-fit"
+          >
+            <h2>Values and Beliefs</h2>
+            <ArrowRight
+              size={16}
+              className="group-hover:opacity-100 opacity-0 transition group-hover:translate-x-1"
+            />
+          </Link>
+          <Link
+            href="/interests"
+            className="group flex flex-row items-center gap-1 w-fit"
+          >
             <h2>Hobbies/Interests</h2>
-          </div>
+            <ArrowRight
+              size={16}
+              className="group-hover:opacity-100 opacity-0 transition group-hover:translate-x-1"
+            />
+          </Link>
         </div>
       </main>
     </div>
