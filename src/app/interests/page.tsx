@@ -4,7 +4,7 @@ import Link from 'next/link'
 export default function Page() {
   return (
     <div className="w-full min-h-screen flex flex-col items-center ">
-      <main className="lg:min-w-xl mt-28">
+      <main className="!sm:min-w-full sm:max-w-xl my-16 sm:my-28 p-6">
         <div className="flex flex-col gap-8">
           <Link
             href="/"

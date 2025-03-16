@@ -10,8 +10,8 @@ import Link from 'next/link'
 
 export default function Page() {
   return (
-    <div className="w-full min-h-screen flex flex-col items-center">
-      <main className="lg:min-w-xl mt-28">
+    <div className="w-full min-h-screen flex flex-col items-center ">
+      <main className="!sm:min-w-full sm:max-w-xl my-16 sm:my-28 p-6">
         <div className="flex flex-col gap-4">
           <Link
             href="/"
@@ -29,7 +29,7 @@ export default function Page() {
             Education
           </h1>
 
-          <div className="grid grid-cols-10">
+          <div className="grid grid-cols-10 gap-4">
             <div className="col-span-1 flex flex-col items-center">
               <Circle size={30} className="mb-4" />
               <div className="h-[110px] w-1 bg-accent-foreground"></div>
@@ -55,7 +55,7 @@ export default function Page() {
             </div>
           </div>
 
-          <div className="grid grid-cols-10">
+          <div className="grid grid-cols-10 gap-4">
             <div className="col-span-1 flex flex-col items-center">
               <Circle size={30} className="mb-4" />
               <div className="h-[170px] w-1 bg-accent-foreground"></div>
@@ -69,8 +69,8 @@ export default function Page() {
               <div className="text-muted-foreground flex flex-row gap-4 items-center">
                 <GraduationCap size={20} />
                 <div>
-                  Bachelor of Science &<br />
-                  Master of Information Systems
+                  Master of Information Systems &<br />
+                  Bachelor of Science
                 </div>
               </div>
               <div className="text-muted-foreground flex flex-row gap-4 items-center">
