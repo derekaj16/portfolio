@@ -3,7 +3,7 @@ import {
   Award,
   Heart,
   Newspaper,
-  PersonStanding,
+  // PersonStanding,
   School,
 } from 'lucide-react'
 import Link from 'next/link'
