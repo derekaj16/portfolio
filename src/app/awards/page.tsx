@@ -11,7 +11,7 @@ export default function Page() {
             className="group flex flex-row items-center gap-1 w-fit"
           >
             <ArrowLeft
-              size={20}
+              size={16}
               className="group-hover:opacity-100 opacity-0 transition"
             />
             <h2 className="-translate-x-5 group-hover:translate-x-0 transition">
