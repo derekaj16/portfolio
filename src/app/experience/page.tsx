@@ -9,11 +9,12 @@ import {
 import Image from 'next/image'
 import bt from '../../../public/img/bt-3.jpg'
 import fs from '../../../public/img/fs.png'
+import mtc from '../../../public/img/mtc.png'
 
 export default function Page() {
   return (
-    <div className="w-full min-h-screen flex flex-col items-center ">
-      <main className="!sm:min-w-full sm:max-w-xl my-16 sm:my-28 p-6">
+    <div className="w-full min-h-screen flex flex-col items-center">
+      <main className="!sm:w-full sm:w-xl my-16 sm:my-28 p-6">
         <div className="flex flex-col gap-8">
           <Link
             href="/"
@@ -33,6 +34,7 @@ export default function Page() {
 
           <BeThere />
           <FamilySearch />
+          <MTC />
         </div>
       </main>
     </div>
@@ -44,8 +46,8 @@ const BeThere = () => {
     <div className="flex flex-col gap-2">
       <div className="flex flex-row items-center justify-between">
         <div className="flex flex-row items-center">
-          <h2 className="text-2xl font-medium">BeThere</h2>
-          <div className="italic text-muted-foreground ml-5 pl-5 border-l border-muted-foreground/50 text-lg">
+          <h2 className="text-xl sm:text-2xl font-medium">BeThere</h2>
+          <div className="italic text-muted-foreground ml-5 pl-5 border-l border-muted-foreground/50 text-base sm:text-lg">
             CEO
           </div>
         </div>
@@ -119,7 +121,7 @@ const BeThere = () => {
         <Accordion type="multiple" className="w-full">
           <AccordionItem value="item-1">
             <AccordionTrigger className="cursor-pointer">
-              <h3 className="text-lg font-semibold mb-2 no-underline">
+              <h3 className="text-base font-medium mb-2 no-underline">
                 How it works
               </h3>
             </AccordionTrigger>
@@ -152,7 +154,7 @@ const BeThere = () => {
           </AccordionItem>
           <AccordionItem value="item-2">
             <AccordionTrigger className="cursor-pointer">
-              <h3 className="text-lg font-semibold mb-2">
+              <h3 className="text-base font-medium mb-2">
                 Benefits of BeThere
               </h3>
             </AccordionTrigger>
@@ -163,7 +165,7 @@ const BeThere = () => {
                   real teams to suit their needs. The advantages of using the
                   app for my team (the BYU Dunk Team) have been:
                 </p>
-                <ol className="list-disc ml-6 mt-2 flex flex-col gap-2">
+                <ul className="list-disc ml-6 mt-2 flex flex-col gap-2">
                   <li>No missed events.</li>
                   <li>Fewer instances of the team arriving late to events.</li>
                   <li>Higher sign-up rates.</li>
@@ -177,7 +179,7 @@ const BeThere = () => {
                     More time focusing on our skills as a team rather than
                     coordinating who can attend what event.
                   </li>
-                </ol>
+                </ul>
               </div>
             </AccordionContent>
           </AccordionItem>
@@ -192,8 +194,8 @@ const FamilySearch = () => {
     <div className="flex flex-col gap-2">
       <div className="flex flex-row items-center justify-between">
         <div className="flex flex-row items-center">
-          <h2 className="text-2xl font-medium">FamilySearch</h2>
-          <div className="italic text-muted-foreground ml-5 pl-5 border-l border-muted-foreground/50 text-lg">
+          <h2 className="text-xl sm:text-2xl font-medium">FamilySearch</h2>
+          <div className="italic text-muted-foreground ml-5 pl-5 border-l border-muted-foreground/50 text-base sm:text-lg">
             Web Developer Intern
           </div>
         </div>
@@ -243,10 +245,12 @@ const FamilySearch = () => {
             target="_blank"
             className="text-sky-500 hover:text-sky-400 transition"
           >
-            Jest
+            JFrog
           </Link>{' '}
           to ensure reliability and efficiency. I collaborated closely with
-          frontend and backend engineers to bring new features to life.
+          frontend and backend engineers to bring new features to life. I would
+          provide a link to the pages I helped to build, but they are meant for
+          internal FamilySearch use only.
         </p>
         <p>
           Towards the end of my internship, I had the privilege of helping to
@@ -267,9 +271,56 @@ const FamilySearch = () => {
               familysearch.org/en/help/helpcenter/help-search
             </Link>
           </div>
-          <div className="text-muted-foreground text-sm italic">
+          <div className="text-muted-foreground text-sm italic ml-8">
             FamilySearch account required to try
           </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+const MTC = () => {
+  return (
+    <div className="flex flex-col gap-2">
+      <div className="flex flex-row items-center justify-between">
+        <div className="flex flex-row items-center">
+          <h2 className="text-xl sm:text-2xl font-medium">MTC</h2>
+          <div className="italic text-muted-foreground ml-5 pl-5 border-l border-muted-foreground/50 text-base sm:text-lg">
+            Student Developer
+          </div>
+        </div>
+        <Image
+          src={mtc}
+          width={75}
+          height={75}
+          className="rounded-lg shadow-2xl"
+          alt="FamilySearch Logo"
+        />
+      </div>
+
+      <div className="italic text-muted-foreground">
+        1 year 4 months • February 2022 - May 2023
+      </div>
+      <div className="flex flex-col gap-6">
+        <p>
+          At the Missionary Training Center, I helped to develop a
+          language-learning app called Embark. The goal of Embark was to
+          expedite the language-learning process for missionaries who are
+          quickly sent to other countries to teach and serve in unfamiliar
+          languages and cultures. I mainly worked on the frontend to develop
+          quiz features on the app. Towards the end of my time at the MTC, I
+          spent time helping to refine administration tools used by employees.
+        </p>
+        <div className="flex flex-row gap-3 items-center">
+          <LinkIcon size={20} className="text-muted-foreground" />
+          <Link
+            href="https://apps.apple.com/us/app/tall-embark-language-learning/id1450739717"
+            target="_blank"
+            className="text-sky-500 hover:text-sky-400 transition"
+          >
+            apps.apple.come/us/app/tall-embark-language-learning/id1450739717
+          </Link>
         </div>
       </div>
     </div>
