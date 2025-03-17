@@ -27,7 +27,9 @@ export default function Page() {
                 Certifications
               </h2>
               <div className="flex flex-col gap-2">
-                <h3 className="font-medium">AWS Cloud Practitioner</h3>
+                <h3 className="font-medium">
+                  AWS Certified Cloud Practitioner
+                </h3>
                 <div className="italic text-muted-foreground">
                   January 1, 2024
                 </div>
