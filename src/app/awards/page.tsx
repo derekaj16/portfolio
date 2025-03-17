@@ -19,7 +19,7 @@ export default function Page() {
             </h2>
           </Link>
           <h1 className="text-5xl text-primary font-semibold mb-4">
-            Awards & Certifications
+            Awards and Certifications
           </h1>
           <div className="flex flex-col gap-8">
             <div>
