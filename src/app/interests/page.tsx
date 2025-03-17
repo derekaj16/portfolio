@@ -46,8 +46,7 @@ export default function Page() {
               </h2>
               <p>
                 When I was 19 years old, I paused my college career and went to
-                the country of Fiji to teach the Gospel, help others come unto
-                Christ, and serve.
+                the country of Fiji to help others come unto Christ and serve.
               </p>
             </div>
           </div>

@@ -69,7 +69,7 @@ export default function Home() {
               className="group-hover:opacity-100 opacity-0 transition group-hover:translate-x-1"
             />
           </Link>
-          <Link
+          {/* <Link
             href="/interests"
             className="group flex flex-row items-center gap-1 w-fit"
           >
@@ -79,7 +79,7 @@ export default function Home() {
               size={16}
               className="group-hover:opacity-100 opacity-0 transition group-hover:translate-x-1"
             />
-          </Link>
+          </Link> */}
         </div>
       </main>
     </div>
