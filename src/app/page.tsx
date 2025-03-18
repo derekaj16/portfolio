@@ -2,7 +2,9 @@ import {
   ArrowRight,
   Award,
   Heart,
+  LinkIcon,
   Newspaper,
+  PersonStanding,
   // PersonStanding,
   School,
 } from 'lucide-react'
@@ -69,7 +71,7 @@ export default function Home() {
               className="group-hover:opacity-100 opacity-0 transition group-hover:translate-x-1"
             />
           </Link>
-          {/* <Link
+          <Link
             href="/interests"
             className="group flex flex-row items-center gap-1 w-fit"
           >
@@ -79,7 +81,20 @@ export default function Home() {
               size={16}
               className="group-hover:opacity-100 opacity-0 transition group-hover:translate-x-1"
             />
-          </Link> */}
+          </Link>
+          <div className="flex flex-col gap-2">
+            <h4 className="text-xs font-semibold mt-2">Other links</h4>
+            <div className="flex flex-row gap-3 items-center">
+              <LinkIcon size={16} className="text-muted-foreground" />
+              <Link
+                href="https://www.linkedin.com/in/derekaj/"
+                target="_blank"
+                className="text-sky-500 hover:text-sky-400 transition"
+              >
+                linkedin.com/in/derekaj/
+              </Link>
+            </div>
+          </div>
         </div>
       </main>
     </div>

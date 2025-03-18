@@ -48,7 +48,7 @@ const BeThere = () => {
         <div className="flex flex-row items-center">
           <h2 className="text-xl sm:text-2xl font-medium">BeThere</h2>
           <div className="italic text-muted-foreground ml-5 pl-5 border-l border-muted-foreground/50 text-base sm:text-lg">
-            CEO
+            Founder
           </div>
         </div>
         <Image
@@ -103,7 +103,7 @@ const BeThere = () => {
           .
         </p>
         <div className="flex flex-row gap-3 items-center">
-          <LinkIcon size={20} className="text-muted-foreground" />
+          <LinkIcon size={16} className="text-muted-foreground" />
           <Link
             href="https://btscheduling.com/"
             target="_blank"
@@ -262,7 +262,7 @@ const FamilySearch = () => {
         </p>
         <div className="flex flex-col gap-2">
           <div className="flex flex-row gap-3 items-center">
-            <LinkIcon size={20} className="text-muted-foreground" />
+            <LinkIcon size={16} className="text-muted-foreground" />
             <Link
               href="https://www.familysearch.org/en/help/helpcenter/help-search"
               target="_blank"
@@ -313,7 +313,7 @@ const MTC = () => {
           spent time helping to refine administration tools used by employees.
         </p>
         <div className="flex flex-row gap-3 items-center">
-          <LinkIcon size={20} className="text-muted-foreground" />
+          <LinkIcon size={16} className="text-muted-foreground" />
           <Link
             href="https://apps.apple.com/us/app/tall-embark-language-learning/id1450739717"
             target="_blank"
