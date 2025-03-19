@@ -23,8 +23,6 @@ import {
   FormMessage,
 } from '@/components/ui/form'
 import { CheckCircle2, Loader2, Send } from 'lucide-react'
-
-import { useFormStatus } from 'react-dom'
 import { useState } from 'react'
 import { sendEmail } from '@/lib/actions'
 
@@ -36,7 +34,7 @@ const formSchema = z.object({
 })
 
 export const ContactCard = () => {
-  const { pending } = useFormStatus()
+  const [pending, setPending] = useState<boolean>(false)
   const [emailSent, setEmailSent] = useState<boolean>(false)
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -47,10 +45,11 @@ export const ContactCard = () => {
   })
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values)
+    setPending(true)
     await sendEmail(values.email, values.message)
     setEmailSent(true)
     form.reset()
+    setPending(false)
   }
   return (
     <Card>

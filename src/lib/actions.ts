@@ -1,15 +1,21 @@
+'use server'
+
 import { Resend } from 'resend'
 
 export async function sendEmail(email: string, message: string) {
-  const resend = new Resend(process.env.RESEND_API_KEY)
+  const resendKey = process.env.RESEND_API_KEY
+  const resend = new Resend(resendKey)
 
-  const { data, error } = await resend.emails.send({
-    from: email,
+  const { error } = await resend.emails.send({
+    from: `noreply@djohnson.dev`,
     to: ['derekaj16@gmail.com'],
     subject: 'Message from Portfolio',
-    html: `<p>${message}</p>`,
+    html: `
+      <p>From: ${email}</p>
+      <p>${message}</p>
+    `,
   })
-  console.log(data)
-  if (error) throw error
+
+  if (error) throw new Error(`error in sending the message: ${error.message}`)
   return
 }
