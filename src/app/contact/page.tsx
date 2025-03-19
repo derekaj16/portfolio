@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { ContactCard } from './contact-card'
+import { ContactCard } from '../../components/contact-card'
 import { ArrowLeft } from 'lucide-react'
 
 export default function Page() {

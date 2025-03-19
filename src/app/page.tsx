@@ -3,7 +3,6 @@ import {
   ArrowRight,
   Award,
   Heart,
-  Mail,
   Newspaper,
   PersonStanding,
   School,
@@ -11,6 +10,8 @@ import {
 import Link from 'next/link'
 // import GitHubIcon from '@/components/github'
 import LinkedInIcon from '@/components/linkedin'
+import { ContactCard } from '../components/contact-card'
+import RCircleIcon from '../../public/r-circle'
 
 export default function Home() {
   return (
@@ -84,28 +85,26 @@ export default function Home() {
               className="group-hover:opacity-100 opacity-0 transition group-hover:translate-x-1"
             />
           </Link>
-          <div className="flex flex-row gap-4 mx-auto items-center mt-16">
-            <Link href="/contact" className="cursor-pointer">
-              <Button variant="ghost">
-                <Mail size={16} />
-              </Button>
-            </Link>
-            {/* <Link
-              href="https://github.com/derekaj16"
-              target="_blank"
-              className="cursor-pointer"
-            >
-              <Button variant="ghost">
-                <GitHubIcon />
-              </Button>
-            </Link> */}
+          <ContactCard />
+          <div className="flex flex-row gap-4 mx-auto items-center mt-12">
             <Link
               href="https://www.linkedin.com/in/derekaj/"
               target="_blank"
               className="cursor-pointer"
             >
-              <Button variant="ghost">
-                <LinkedInIcon />
+              <Button
+                variant="ghost"
+                className="flex flex-row gap-5 pl-6 py-6 cursor-pointer"
+              >
+                <div className="relative">
+                  <LinkedInIcon className="scale-200" />
+                  <RCircleIcon className="absolute scale-[13%] translate-x-[18px] -translate-y-[6px]" />
+                </div>
+                <div className=" text-start text-xs">
+                  View my
+                  <br />
+                  LinkedIn profile
+                </div>
               </Button>
             </Link>
           </div>
