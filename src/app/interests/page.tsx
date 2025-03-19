@@ -40,7 +40,7 @@ export default function Page() {
               <p>While on the team, I developed these skills:</p>
               <ul className="list-disc ml-6 my-2 flex flex-col gap-2">
                 <li>Performance under pressure</li>
-                <li>Synchornization and teamwork</li>
+                <li>Synchronization and teamwork</li>
                 <li>Engaging and entertaining audiences</li>
                 <li>Acrobatics and tricking</li>
                 <li>Adaptable athleticism</li>
