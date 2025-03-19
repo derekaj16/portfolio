@@ -23,10 +23,10 @@ import {
   FormMessage,
 } from '@/components/ui/form'
 import { CheckCircle2, Loader2, Send } from 'lucide-react'
-import { Resend } from 'resend'
+
 import { useFormStatus } from 'react-dom'
-import { toast } from 'sonner'
 import { useState } from 'react'
+import { sendEmail } from '@/lib/actions'
 
 const formSchema = z.object({
   email: z.string().email(),
@@ -36,7 +36,6 @@ const formSchema = z.object({
 })
 
 export const ContactCard = () => {
-  const resend = new Resend('re_fNUC2sXg_8gjBbYCXaX74cfUXjzQYfubL')
   const { pending } = useFormStatus()
   const [emailSent, setEmailSent] = useState<boolean>(false)
   const form = useForm<z.infer<typeof formSchema>>({
@@ -49,16 +48,9 @@ export const ContactCard = () => {
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
     console.log(values)
-
-    await resend.emails.send({
-      from: values.email,
-      to: ['derekaj16@gmail.com'],
-      subject: 'Message from Portfolio',
-      html: `<p>${values.message}</p>`,
-    })
+    await sendEmail(values.email, values.message)
     setEmailSent(true)
     form.reset()
-    toast('Email sent!', { description: "I'll respond as soon as possible!" })
   }
   return (
     <Card>
