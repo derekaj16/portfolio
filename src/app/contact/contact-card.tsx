@@ -102,7 +102,7 @@ export const ContactCard = () => {
               <CardFooter className="p-0">
                 <Button disabled={pending} type="submit" className="w-full">
                   {pending ? (
-                    <Loader2 size={16} className="animtate-spin" />
+                    <Loader2 size={16} className="animate-spin" />
                   ) : (
                     <div className="flex flex-row gap-2 items-center">
                       <div>Send</div>
