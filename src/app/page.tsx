@@ -1,14 +1,16 @@
+import { Button } from '@/components/ui/button'
 import {
   ArrowRight,
   Award,
   Heart,
-  LinkIcon,
+  Mail,
   Newspaper,
   PersonStanding,
-  // PersonStanding,
   School,
 } from 'lucide-react'
 import Link from 'next/link'
+// import GitHubIcon from '@/components/github'
+import LinkedInIcon from '@/components/linkedin'
 
 export default function Home() {
   return (
@@ -82,18 +84,30 @@ export default function Home() {
               className="group-hover:opacity-100 opacity-0 transition group-hover:translate-x-1"
             />
           </Link>
-          <div className="flex flex-col gap-2">
-            <h4 className="text-xs font-semibold mt-2">Other links</h4>
-            <div className="flex flex-row gap-3 items-center">
-              <LinkIcon size={16} className="text-muted-foreground" />
-              <Link
-                href="https://www.linkedin.com/in/derekaj/"
-                target="_blank"
-                className="text-sky-500 hover:text-sky-400 transition"
-              >
-                linkedin.com/in/derekaj/
-              </Link>
-            </div>
+          <div className="flex flex-row gap-4 mx-auto items-center mt-16">
+            <Link href="/contact" className="cursor-pointer">
+              <Button variant="ghost">
+                <Mail size={16} />
+              </Button>
+            </Link>
+            {/* <Link
+              href="https://github.com/derekaj16"
+              target="_blank"
+              className="cursor-pointer"
+            >
+              <Button variant="ghost">
+                <GitHubIcon />
+              </Button>
+            </Link> */}
+            <Link
+              href="https://www.linkedin.com/in/derekaj/"
+              target="_blank"
+              className="cursor-pointer"
+            >
+              <Button variant="ghost">
+                <LinkedInIcon />
+              </Button>
+            </Link>
           </div>
         </div>
       </main>

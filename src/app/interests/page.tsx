@@ -35,9 +35,9 @@ export default function Page() {
                 trampoline dunking, stunting, and flipping. We performed at
                 hundreds of shows for diverse audiences, including stadiums of
                 fans, small church groups, individuals with special needs,
-                elementary schools, and large companies. While on the team, I
-                developed these skills:
+                elementary schools, and large companies.
               </p>
+              <p>While on the team, I developed these skills:</p>
               <ul className="list-disc ml-6 my-2 flex flex-col gap-2">
                 <li>Performance under pressure</li>
                 <li>Synchornization and teamwork</li>
@@ -172,32 +172,14 @@ export default function Page() {
                 />
               </div>
             </div>
-            <div className="flex flex-col gap-2">
-              <h2 className="text-xl sm:text-2xl font-semibold">
-                Learning Langauges
-              </h2>
-              <p>
-                Programming languages aren&apos;t the only languages I like. I
-                love learning other languages too. So far, I am fluent in:
-              </p>
-              <ul className="list-disc ml-6 my-2 flex flex-col gap-2">
-                <li>Fijian</li>
-              </ul>
-              <p>And I am working on these languages:</p>
-              <ul className="list-disc ml-6 my-2 flex flex-col gap-2">
-                <li>Spanish</li>
-                <li>French</li>
-                <li>German</li>
-              </ul>
-              <p>
-                If I had more time, I would also love to learn Arabic, Chinese
-                or a language that doesn&apos;t use the English alphabet.
-              </p>
-            </div>
+
             <div className="flex flex-col gap-2">
               <h2 className="text-xl sm:text-2xl font-semibold">
                 Two-Year Volunteer Mission
               </h2>
+              <div className="text-muted-foreground italic">
+                June 2018 - April 2020
+              </div>
               <p>
                 At 19 years old, I left on a two-year volunteer mission for my
                 church (The Church of Jesus Christ of Latter-day Saints) to
@@ -239,6 +221,30 @@ export default function Page() {
                   goals we made.
                 </li>
               </ul>
+            </div>
+            <div className="flex flex-col gap-2">
+              <h2 className="text-xl sm:text-2xl font-semibold">
+                Learning Langauges
+              </h2>
+              <p>
+                Programming languages aren&apos;t the only languages I like. I
+                love learning other languages too. So far, I am fluent in:
+              </p>
+              <ul className="list-disc ml-6 my-2 flex flex-col gap-2">
+                <li>Fijian</li>
+              </ul>
+              <p>And I am working on these languages:</p>
+              <ul className="list-disc ml-6 my-2 flex flex-col gap-2">
+                <li>Spanish</li>
+                <li>French</li>
+                <li>German</li>
+              </ul>
+              <p>
+                If I had more time, I would also love to learn Arabic, Chinese
+                or a language that doesn&apos;t use the English alphabet. I love
+                learning languages because they allow you to understand people
+                in a deeper and more meaningful way.
+              </p>
             </div>
           </div>
         </div>
