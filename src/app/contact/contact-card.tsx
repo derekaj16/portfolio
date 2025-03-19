@@ -58,7 +58,7 @@ export const ContactCard = () => {
     toast('Email sent!', { description: "I'll respond as soon as possible!" })
   }
   return (
-    <Card className="w-full">
+    <Card>
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)}>
           <CardContent className="flex flex-col gap-6">

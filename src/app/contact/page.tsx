@@ -5,8 +5,8 @@ import { ArrowLeft } from 'lucide-react'
 export default function Page() {
   return (
     <div className="w-full min-h-screen flex flex-col items-center">
-      <main className="!sm:w-full sm:w-xl my-16 sm:my-28 p-6">
-        <div className="flex flex-col gap-4">
+      <main className="w-full sm:w-xl my-16 sm:my-28 p-6">
+        <div className="flex flex-col gap-4 w-full">
           <Link
             href="/"
             className="group flex flex-row items-center gap-1 w-fit"
