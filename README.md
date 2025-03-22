@@ -18,5 +18,5 @@ Welcome to my portfolio! This site showcases my experience, work, and other thin
 
 ## Contact
 
-📧 Email: derekaj16@gmail.com
+📧 Email: derekaj16@gmail.com  
 🔗 LinkedIn: [linkedin.com/in/derekaj/](https://www.linkedin.com/in/derekaj/)
