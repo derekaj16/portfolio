@@ -25,6 +25,7 @@ import {
 import { CheckCircle2, ChevronDown, Loader2, Send } from 'lucide-react'
 import { useState } from 'react'
 import { sendEmail } from '@/lib/actions'
+import { toast } from 'sonner'
 
 const formSchema = z.object({
   email: z.string().email(),
@@ -36,7 +37,6 @@ const formSchema = z.object({
 export const ContactCard = () => {
   const [pending, setPending] = useState<boolean>(false)
   const [open, setOpen] = useState<boolean>(false)
-  const [emailSent, setEmailSent] = useState<boolean>(false)
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -48,30 +48,25 @@ export const ContactCard = () => {
   async function onSubmit(values: z.infer<typeof formSchema>) {
     setPending(true)
     await sendEmail(values.email, values.message)
-    setEmailSent(true)
     form.reset()
     setPending(false)
+    toast('Email sent!', {
+      description: 'I will get back to you as soon as possible.',
+    })
   }
   return (
-    <Card
-      className={`${
-        !open && 'hover:bg-muted transition cursor-pointer pb-2'
-      } mt-8`}
-      onClick={() => !open && setOpen(true)}
-    >
-      {emailSent ? (
-        <div className="w-full h-full flex justify-center items-center py-32">
-          <div className="flex flex-row gap-2 items-center font-semibold">
-            <CheckCircle2 size={24} />
-            Email sent!
-          </div>
-        </div>
-      ) : (
+    <div className="w-full max-w-2xl mx-auto mt-16">
+      <Card
+        className={`${
+          !open && 'hover:bg-muted transition cursor-pointer pb-2'
+        } w-full`}
+        onClick={() => !open && setOpen(true)}
+      >
         <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)}>
             <CardContent className="flex flex-col gap-6">
               <CardHeader className="p-0">
-                <CardTitle>Contact Me</CardTitle>
+                <CardTitle className="text-2xl">Contact Me</CardTitle>
                 <CardDescription>
                   Send me a message and let&apos;s connect!
                 </CardDescription>
@@ -128,7 +123,7 @@ export const ContactCard = () => {
             </CardContent>
           </form>
         </Form>
-      )}
-    </Card>
+      </Card>
+    </div>
   )
 }
