@@ -18,7 +18,5 @@ Welcome to my portfolio! This site showcases my experience, work, and other thin
 
 ## Contact
 
-📧 Email: your@email.com  
-🔗 LinkedIn: [linkedin.com/in/derekaj16](https://linkedin.com/in/derekaj16)
-
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+📧 Email: derekaj16@gmail.com
+🔗 LinkedIn: [linkedin.com/in/derekaj/](https://www.linkedin.com/in/derekaj/)
