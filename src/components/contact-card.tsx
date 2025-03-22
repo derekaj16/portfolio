@@ -22,7 +22,7 @@ import {
   FormLabel,
   FormMessage,
 } from '@/components/ui/form'
-import { CheckCircle2, ChevronDown, Loader2, Send } from 'lucide-react'
+import { ChevronDown, Loader2, Send } from 'lucide-react'
 import { useState } from 'react'
 import { sendEmail } from '@/lib/actions'
 import { toast } from 'sonner'
