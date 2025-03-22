@@ -1,5 +1,12 @@
 import { BackButton } from '@/components/back-button'
 import { Awards, Certifications } from './components'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Awards',
+  description:
+    'A collection of my awards and certifications, showcasing my achievements in software development and beyond.',
+}
 
 export default function Page() {
   return (

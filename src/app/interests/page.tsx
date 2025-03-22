@@ -5,6 +5,13 @@ import {
   Mission,
   PianoPerformance,
 } from './components'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Interests and Life Experiences',
+  description:
+    'A look into my interests and experiences, including lessons learned from each',
+}
 
 export default function Page() {
   return (

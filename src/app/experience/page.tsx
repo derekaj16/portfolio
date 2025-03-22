@@ -1,5 +1,11 @@
 import { BackButton } from '@/components/back-button'
 import { BeThere, FamilySearch, MTC } from './components'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Experience',
+  description: 'Explore my work experience, including the business I founded',
+}
 
 export default function Page() {
   return (

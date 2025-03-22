@@ -1,5 +1,11 @@
 import { BackButton } from '@/components/back-button'
 import { HighSchool, University } from './components'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Education',
+  description: 'A brief overview of my educational journey',
+}
 
 export default function Page() {
   return (

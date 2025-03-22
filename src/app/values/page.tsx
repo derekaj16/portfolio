@@ -1,5 +1,11 @@
 import { BackButton } from '@/components/back-button'
 import { Values } from './components/values'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Values',
+  description: 'Core values that guide my work, decisions, and interactions',
+}
 
 export default function Page() {
   return (
