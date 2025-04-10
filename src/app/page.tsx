@@ -45,9 +45,9 @@ export default function Home() {
               <div>I Combine Nerd, Athlete, and Musician</div>
               <div className="text-4xl flex flex-row gap-4 items-center justify-center text-muted-foreground">
                 <Glasses size={28} />
-                <Plus size={28} />
+                <Plus size={20} />
                 <PersonStanding size={28} />
-                <Plus size={28} />
+                <Plus size={20} />
                 <Piano size={28} />
               </div>
             </h2>
