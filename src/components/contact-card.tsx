@@ -55,7 +55,7 @@ export const ContactCard = () => {
     })
   }
   return (
-    <div className="w-full max-w-2xl mx-auto mt-16">
+    <div className="w-full max-w-2xl mx-auto mt-8">
       <Card
         className={`${
           !open && 'hover:bg-muted transition cursor-pointer pb-2'
