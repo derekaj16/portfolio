@@ -1,6 +1,6 @@
 import { TreePalm } from 'lucide-react'
 import Image from 'next/image'
-import missionPic from '../../../../public/img/Journey.jpg'
+import missionPic from '../../../../public/img/journey.jpg'
 
 const Mission = () => {
   return (
