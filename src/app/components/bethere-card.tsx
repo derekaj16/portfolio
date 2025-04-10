@@ -32,10 +32,10 @@ export const BeThereCard = () => {
           </CardDescription>
         </CardHeader>
         <div className="p-6">
-          I developed and launched a feature-rich event-scheduling app that
-          boosts team efficiency, productivity, and collaboration. The idea came
-          from my own sports team&apos;s dissatisfaction with other scheduling
-          tools that made it difficult to manage events we attended.
+          Inspired by the frustrations my sports team faced managing our events
+          with existing tools, I developed and launched a feature-rich
+          event-scheduling app that boosts team efficiency, productivity, and
+          collaboration.
         </div>
         <CardFooter className="flex flex-row justify-between items-center absolute bottom-4 w-full">
           <div className="flex flex-row gap-1">

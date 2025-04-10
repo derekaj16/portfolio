@@ -27,7 +27,7 @@ const MTC = () => {
       </div>
 
       <div className="flex flex-row gap-1 my-3">
-        <LogoCircle image={angularLogo} name="React" />
+        <LogoCircle image={angularLogo} name="Angular" />
         <LogoCircle image={jsLogo} name="Javascript" />
       </div>
 

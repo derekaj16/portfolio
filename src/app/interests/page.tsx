@@ -21,7 +21,7 @@ export default function Page() {
           <BackButton />
           <div className="sm:max-w-xl max-w-full mx-auto mt-8">
             <h1 className="text-5xl text-primary font-semibold mb-4">
-              Experience
+              Interests and Life Experience
             </h1>
             <div className="flex flex-col gap-24 my-8">
               <DunkTeam />

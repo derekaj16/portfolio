@@ -1,4 +1,4 @@
-import { ChartNoAxesCombined, CheckSquare, LinkIcon, Users } from 'lucide-react'
+import { CheckSquare, LinkIcon, Users } from 'lucide-react'
 import Link from 'next/link'
 import {
   Accordion,
@@ -8,7 +8,7 @@ import {
 } from '@/components/ui/accordion'
 import Image from 'next/image'
 import bt from '../../../../public/img/bt-3.jpg'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Card, CardContent } from '@/components/ui/card'
 import { LogoCircle } from '@/components/logo-circle'
 import reactLogo from '../../../../public/img/react.png'
 import tsLogo from '../../../../public/img/ts.png'
@@ -115,8 +115,8 @@ const BeThere = () => {
         </p> */}
 
         <Card className="p-0 bg-background dark:bg-input/30 shadow-none">
-          <CardContent className="px-4 pt-2 pb-4">
-            <CardHeader className="p-0">
+          <CardContent className="p-4">
+            {/* <CardHeader className="p-0">
               <CardTitle className="text-sm font-normal italic flex flex-row items-center gap-1">
                 <ChartNoAxesCombined
                   size={16}
@@ -124,7 +124,7 @@ const BeThere = () => {
                 />
                 Cool Stats
               </CardTitle>
-            </CardHeader>
+            </CardHeader> */}
             <div className="flex flex-row justify-around">
               <div className="flex flex-col gap-2 items-center">
                 <div className="flex flex-row gap-1 font-medium items-center">
@@ -148,7 +148,7 @@ const BeThere = () => {
           <AccordionItem value="item-1">
             <AccordionTrigger className="cursor-pointer">
               <h3 className="text-base font-medium mb-2 no-underline">
-                How it works
+                How It Works
               </h3>
             </AccordionTrigger>
             <AccordionContent>

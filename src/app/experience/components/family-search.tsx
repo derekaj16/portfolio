@@ -70,9 +70,7 @@ const FamilySearch = () => {
             JFrog
           </Link>{' '}
           to ensure reliability and efficiency. I collaborated closely with
-          frontend and backend engineers to bring new features to life. I would
-          provide a link to the pages I helped to build, but they are meant for
-          internal FamilySearch use only.
+          frontend and backend engineers to bring new features to life.
         </p>
         <p>
           Towards the end of my internship, I had the privilege of helping to

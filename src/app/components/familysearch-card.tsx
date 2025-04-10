@@ -28,11 +28,10 @@ export const FamilySearchCard = () => {
           <CardDescription>AI-Powered Search Tool</CardDescription>
         </CardHeader>
         <div className="p-6">
-          I proactively led early development of an AI-powered search tool using
-          the OpenAI API while teammates were occupied with other projects,
-          accelerating its delivery and integration; the tool draws upon
-          FamilySearch resources for answers and is built with custom
-          FamilySearch components.
+          As an intern at FamilySearch, I proactively led early development of
+          an AI-powered search tool using the OpenAI API while teammates were
+          occupied with other projects, accelerating its delivery and
+          integration.
         </div>
         <CardFooter className="flex flex-row justify-between items-center absolute bottom-4 w-full">
           <div className="flex flex-row gap-1">
