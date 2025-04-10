@@ -4,7 +4,7 @@ import Link from 'next/link'
 const PianoPerformance = () => {
   return (
     <div id="piano" className="flex flex-col gap-2">
-      <Piano size={32} />
+      <Piano size={32} className="text-cyan-500" />
       <h2 className="text-xl sm:text-2xl font-semibold">Piano Performance</h2>
       <div className="text-muted-foreground italic">2011 - 2018</div>
       <p>

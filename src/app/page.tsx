@@ -12,7 +12,14 @@ import {
   DunkTeamCard,
   EducationCard,
 } from './components'
-import { Glasses, PersonStanding, Piano, Plus } from 'lucide-react'
+import {
+  Glasses,
+  GraduationCap,
+  Palette,
+  PersonStanding,
+  Piano,
+  Plus,
+} from 'lucide-react'
 import QuickLinks from './components/quick-links'
 
 export default function Home() {
@@ -21,8 +28,11 @@ export default function Home() {
       <main className="w-full sm:max-w-4xl mb-20 px-8">
         <div className="flex flex-col gap-8">
           <Hero />
-          <div className="mb-8">
-            <h2 className="text-4xl font-semibold text-center mb-8">
+          <div className="mb-12">
+            <h2 className="text-4xl font-semibold text-center mb-12 flex flex-col gap-6">
+              <div className="text-4xl flex flex-row gap-4 items-center justify-center text-cyan-500">
+                <Palette size={28} />
+              </div>
               Stuff I&apos;ve Made
             </h2>
             <div className="grid md:grid-cols-2 grid-cols-1 gap-10">
@@ -33,23 +43,26 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="mb-8">
-            <h2 className="text-4xl font-semibold text-center mb-8">
+          <div className="mb-12">
+            <h2 className="text-4xl font-semibold text-center mb-12 flex flex-col gap-6">
+              <div className="text-4xl flex flex-row gap-4 items-center justify-center text-cyan-500">
+                <GraduationCap size={28} />
+              </div>
               Education
             </h2>
             <EducationCard />
           </div>
 
-          <div className="mb-8">
-            <h2 className="text-4xl font-semibold text-center mb-8 flex flex-col gap-6">
-              <div>I Combine Nerd, Athlete, and Musician</div>
-              <div className="text-4xl flex flex-row gap-4 items-center justify-center text-muted-foreground">
+          <div className="mb-12">
+            <h2 className="text-4xl font-semibold text-center mb-12 flex flex-col gap-6">
+              <div className="text-4xl flex flex-row gap-4 items-center justify-center text-cyan-500">
                 <Glasses size={28} />
                 <Plus size={20} />
                 <PersonStanding size={28} />
                 <Plus size={20} />
                 <Piano size={28} />
               </div>
+              <div>I Combine Nerd, Athlete, and Musician</div>
             </h2>
             <div className="grid md:grid-cols-2 grid-cols-1 gap-10">
               <DunkTeamCard />

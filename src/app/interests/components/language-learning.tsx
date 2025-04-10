@@ -3,7 +3,7 @@ import { Languages } from 'lucide-react'
 const LanguageLearning = () => {
   return (
     <div className="flex flex-col gap-2">
-      <Languages size={32} />
+      <Languages size={32} className="text-cyan-500" />
       <h2 className="text-xl sm:text-2xl font-semibold">Learning Langauges</h2>
       <p>
         Programming languages aren&apos;t the only languages I like. I love

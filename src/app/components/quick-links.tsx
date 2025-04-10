@@ -23,7 +23,7 @@ const QuickLinks = () => {
           >
             <Newspaper
               size={16}
-              className="mr-1 group-hover:text-gray-500 transition"
+              className="mr-1 group-hover:text-cyan-500 transition"
             />
             <div>Experience</div>
             <ArrowRight
@@ -39,7 +39,7 @@ const QuickLinks = () => {
           >
             <School
               size={16}
-              className="mr-1 group-hover:text-amber-700 transition"
+              className="mr-1 group-hover:text-cyan-500 transition"
             />
             <div>Education</div>
             <ArrowRight
@@ -56,7 +56,7 @@ const QuickLinks = () => {
           >
             <Award
               size={16}
-              className="mr-1 group-hover:text-blue-500 transition"
+              className="mr-1 group-hover:text-cyan-500 transition"
             />
             <div>Awards and Certifications</div>
             <ArrowRight
@@ -72,7 +72,7 @@ const QuickLinks = () => {
           >
             <PersonStanding
               size={16}
-              className="mr-1 group-hover:text-emerald-500 transition"
+              className="mr-1 group-hover:text-cyan-500 transition"
             />
             <div>Interests and Life Experiences</div>
             <ArrowRight
@@ -88,7 +88,7 @@ const QuickLinks = () => {
           >
             <Heart
               size={16}
-              className="mr-1 group-hover:text-red-500 transition"
+              className="mr-1 group-hover:text-cyan-500 transition"
             />
             <div>Values</div>
             <ArrowRight

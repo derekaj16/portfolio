@@ -5,7 +5,7 @@ import missionPic from '../../../../public/img/journey.jpg'
 const Mission = () => {
   return (
     <div className="flex flex-col gap-2">
-      <TreePalm size={32} />
+      <TreePalm size={32} className="text-cyan-500" />
       <h2 className="text-xl sm:text-2xl font-semibold">
         Two-Year Volunteer Mission
       </h2>

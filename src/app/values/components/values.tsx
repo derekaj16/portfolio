@@ -4,7 +4,7 @@ export const Values = () => {
   return (
     <div className="flex flex-col gap-12">
       <div className="flex flex-col gap-2">
-        <Heart size={32} />
+        <Heart size={32} className="text-cyan-500" />
         <h3 className="text-xl font-semibold">Charity</h3>
         <p>
           Charity is the supreme attribute. I will love God and love others. No
@@ -14,7 +14,7 @@ export const Values = () => {
         </p>
       </div>
       <div className="flex flex-col gap-2">
-        <Gavel size={32} />
+        <Gavel size={32} className="text-cyan-500" />
         <h3 className="text-xl font-semibold">Fairness</h3>
         <p>
           I will be fair in my actions and words. I will not form opinions of a
@@ -23,7 +23,7 @@ export const Values = () => {
         </p>
       </div>
       <div className="flex flex-col gap-2">
-        <BadgeCheck size={32} />
+        <BadgeCheck size={32} className="text-cyan-500" />
         <h3 className="text-xl font-semibold">
           Integrity, Honesty, and Dependability
         </h3>
@@ -34,7 +34,7 @@ export const Values = () => {
         </p>
       </div>
       <div className="flex flex-col gap-2">
-        <Clock size={32} />
+        <Clock size={32} className="text-cyan-500" />
         <h3 className="text-xl font-semibold">Patience</h3>
         <p>
           I will not allow any matter, no matter how serious, to cause me to
@@ -42,7 +42,7 @@ export const Values = () => {
         </p>
       </div>
       <div className="flex flex-col gap-2">
-        <HandHeart size={32} />
+        <HandHeart size={32} className="text-cyan-500" />
         <h3 className="text-xl font-semibold">Generosity</h3>
         <p>
           Through my own means—love, service, time, finances, etc.—I will be

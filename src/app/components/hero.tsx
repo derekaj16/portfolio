@@ -9,11 +9,11 @@ const Hero = () => {
       transition={{ duration: 0.5, delay: 0.5, ease: 'easeOut' }}
       className="flex flex-col gap-4 h-screen justify-center relative"
     >
-      <div className="text-lg text-muted-foreground uppercase leading-2 font-medium">
+      <div className="text-lg uppercase leading-2 font-medium text-cyan-500">
         Portfolio
       </div>
       <h1 className="text-5xl text-primary font-semibold">Derek Johnson</h1>
-      <div className="">
+      <div className="text-muted-foreground">
         An <i>adaptable</i> software engineer and entrepreneur
         {/* I take initiative where it&apos;s not required, but it makes a
               difference. */}
