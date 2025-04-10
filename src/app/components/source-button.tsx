@@ -17,7 +17,7 @@ const SourceCodeButton = () => {
           <Link href="https://github.com/derekaj16/portfolio" target="_blank">
             <Button
               type="button"
-              variant="ghost"
+              variant="outline"
               className="cursor-pointer py-6"
             >
               <div>

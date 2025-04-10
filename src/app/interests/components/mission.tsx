@@ -1,4 +1,6 @@
 import { TreePalm } from 'lucide-react'
+import Image from 'next/image'
+import missionPic from '../../../../public/img/Journey.jpg'
 
 const Mission = () => {
   return (
@@ -8,6 +10,11 @@ const Mission = () => {
         Two-Year Volunteer Mission
       </h2>
       <div className="text-muted-foreground italic">June 2018 - April 2020</div>
+      <Image
+        src={missionPic}
+        alt="A picture of me walking on a road in Fiji"
+        className="w-full rounded-lg my-4"
+      />
       <p>
         At 19 years old, I left on a two-year volunteer mission for my church
         (The Church of Jesus Christ of Latter-day Saints) to Fiji, where I

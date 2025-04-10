@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 const PianoPerformance = () => {
   return (
-    <div className="flex flex-col gap-2">
+    <div id="piano" className="flex flex-col gap-2">
       <Piano size={32} />
       <h2 className="text-xl sm:text-2xl font-semibold">Piano Performance</h2>
       <div className="text-muted-foreground italic">2011 - 2018</div>
@@ -33,7 +33,6 @@ const PianoPerformance = () => {
         <li>Rhythm, musicality, and finger mechanics</li>
         <li>Not letting mistakes get in the way of progress</li>
         <li>The cumulative power of consistent, focused effort</li>
-
         <li>
           Developing talent opens opportunities for service in many settings.
           For example, I spent one year playing the piano in the lobby of a
@@ -48,7 +47,7 @@ const PianoPerformance = () => {
       <div className="flex flex-row gap-3 items-center mt-3 group">
         <Film size={16} className="text-muted-foreground" />
         <Link
-          href="https://www.youtube.com/watch?v=MWheEsG7GVc"
+          href="https://youtu.be/J17RF-RjamI?si=gI0eyMVpRLTRQaka"
           target="_blank"
           className="text-sky-500 hover:text-sky-400 transition"
         >

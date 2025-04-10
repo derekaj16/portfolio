@@ -1,4 +1,4 @@
-import { LinkIcon } from 'lucide-react'
+import { ChartNoAxesCombined, CheckSquare, LinkIcon, Users } from 'lucide-react'
 import Link from 'next/link'
 import {
   Accordion,
@@ -8,15 +8,33 @@ import {
 } from '@/components/ui/accordion'
 import Image from 'next/image'
 import bt from '../../../../public/img/bt-3.jpg'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { LogoCircle } from '@/components/logo-circle'
+import reactLogo from '../../../../public/img/react.png'
+import tsLogo from '../../../../public/img/ts.png'
+import supabaseLogo from '../../../../public/img/supabase.png'
+import flutterLogo from '../../../../public/img/flutter.png'
 
 const BeThere = () => {
   return (
     <div id="bethere" className="flex flex-col gap-2">
       <div className="flex flex-row items-center justify-between">
-        <div className="flex flex-row items-center">
-          <h2 className="text-xl sm:text-2xl font-medium">BeThere</h2>
-          <div className="italic text-muted-foreground ml-5 pl-5 border-l border-muted-foreground/50 text-base sm:text-lg">
-            Founder
+        <div className="flex flex-col gap-2">
+          <div className="flex flex-row items-center">
+            <h2 className="text-xl sm:text-2xl font-medium">BeThere</h2>
+            <div className="italic text-muted-foreground ml-5 pl-5 border-l border-muted-foreground/50 text-base sm:text-lg">
+              Founder
+            </div>
+          </div>
+          <div className="flex flex-row gap-3 items-center">
+            <LinkIcon size={16} className="text-muted-foreground" />
+            <Link
+              href="https://btscheduling.com/"
+              target="_blank"
+              className="text-sky-500 hover:text-sky-400 transition"
+            >
+              btscheduling.com
+            </Link>
           </div>
         </div>
         <Image
@@ -28,15 +46,32 @@ const BeThere = () => {
         />
       </div>
 
+      <div className="flex flex-row gap-1 my-3">
+        <LogoCircle image={reactLogo} name="React" />
+        <LogoCircle image={tsLogo} name="Typescript" />
+        <LogoCircle image={supabaseLogo} name="Supabase" />
+        <LogoCircle image={flutterLogo} name="Flutter" />
+      </div>
+
       <div className="italic text-muted-foreground">
         11 months • May 2024 - Present
       </div>
+
       <div className="flex flex-col gap-6">
         <p>
           BeThere is an event scheduling and staffing software. It is a tool
           that significantly boosts team efficiency, productivity, and
           collaboration.
         </p>
+
+        <p>
+          While on the BYU Dunk Team, a team that attends hundreds of events, I
+          noticed we kept switching scheduling softwares because they were
+          inadequate for our team&apos;s needs. I took initiative to build an
+          app that enabled our team to effectively collaborate and manage our
+          events.
+        </p>
+
         <p>
           The website is built using{' '}
           <Link
@@ -72,21 +107,42 @@ const BeThere = () => {
           </Link>
           .
         </p>
-        <div className="flex flex-row gap-3 items-center">
-          <LinkIcon size={16} className="text-muted-foreground" />
-          <Link
-            href="https://btscheduling.com/"
-            target="_blank"
-            className="text-sky-500 hover:text-sky-400 transition"
-          >
-            btscheduling.com
-          </Link>
-        </div>
-        <p>
+
+        {/* <p>
           BeThere is the product of months of planning, UI/UX design,
           development, and testing. It is by no means finished, but always
           improving.
-        </p>
+        </p> */}
+
+        <Card className="p-0 bg-background dark:bg-input/30 shadow-none">
+          <CardContent className="px-4 pt-2 pb-4">
+            <CardHeader className="p-0">
+              <CardTitle className="text-sm font-normal italic flex flex-row items-center gap-1">
+                <ChartNoAxesCombined
+                  size={16}
+                  className="text-muted-foreground"
+                />
+                Cool Stats
+              </CardTitle>
+            </CardHeader>
+            <div className="flex flex-row justify-around">
+              <div className="flex flex-col gap-2 items-center">
+                <div className="flex flex-row gap-1 font-medium items-center">
+                  <Users size={16} />
+                  Active Users
+                </div>
+                <div className="text-4xl font-semibold">54</div>
+              </div>
+              <div className="flex flex-col gap-2 items-center">
+                <div className="flex flex-row gap-1 font-medium items-center">
+                  <CheckSquare size={16} />
+                  Events Managed
+                </div>
+                <div className="text-4xl font-semibold">500+</div>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
 
         <Accordion type="multiple" className="w-full">
           <AccordionItem value="item-1">

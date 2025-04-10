@@ -2,6 +2,9 @@ import { LinkIcon } from 'lucide-react'
 import Link from 'next/link'
 import Image from 'next/image'
 import fs from '../../../../public/img/fs.png'
+import reactLogo from '../../../../public/img/react.png'
+import jsLogo from '../../../../public/img/js.png'
+import { LogoCircle } from '@/components/logo-circle'
 
 const FamilySearch = () => {
   return (
@@ -20,6 +23,11 @@ const FamilySearch = () => {
           className="rounded-lg shadow-2xl"
           alt="FamilySearch Logo"
         />
+      </div>
+
+      <div className="flex flex-row gap-1 my-3">
+        <LogoCircle image={reactLogo} name="React" />
+        <LogoCircle image={jsLogo} name="Javascript" />
       </div>
 
       <div className="italic text-muted-foreground">
@@ -89,6 +97,10 @@ const FamilySearch = () => {
             FamilySearch account required to try
           </div>
         </div>
+        <video controls className="w-full rounded-lg mb-2" preload="false" loop>
+          <source src="/video/fs-search.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
       </div>
     </div>
   )

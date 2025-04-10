@@ -1,5 +1,6 @@
 export { default as Hero } from './hero'
-export { default as Sidebar } from './sidebar'
+export { default as QuickLinks } from './sidebar'
 export { default as LinkedInButton } from './linkedin-button'
 export { default as ValueStatements } from './value-statements'
 export { default as SourceCodeButton } from './source-button'
+export { default as ShareResume } from './share-resume'

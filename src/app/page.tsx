@@ -2,30 +2,68 @@ import { ContactCard } from '../components/contact-card'
 import {
   Hero,
   LinkedInButton,
-  Sidebar,
-  ValueStatements,
   SourceCodeButton,
+  ShareResume,
 } from './components'
+import { BeThereCard } from './components/bethere-card'
+import { FamilySearchCard } from './components/familysearch-card'
+import { InsertCompanyCard } from './components/insert-company-card'
+import { RecipeAppCard } from './components/recipe-app-card'
+import { Glasses, PersonStanding, Piano, Plus } from 'lucide-react'
+import QuickLinks from './components/sidebar'
+import { PianoCard } from './components/piano-card'
+import { DunkTeamCard } from './components/dunkteam-card'
+import { EducationCard } from './components/education-card'
 
 export default function Home() {
   return (
     <div className="w-full min-h-screen flex flex-col items-center">
-      <main className="w-full sm:max-w-5xl mb-20 px-8">
+      <main className="w-full sm:max-w-4xl mb-20 px-8">
         <div className="flex flex-col gap-8">
           <Hero />
-          <div className="grid md:grid-cols-3 grid-cols-1 gap-20">
-            <div className="col-span-2">
-              <ValueStatements />
-            </div>
-            <div className="col-span-1">
-              <Sidebar />
+          <div className="mb-8">
+            <h2 className="text-4xl font-semibold text-center mb-8">
+              Stuff I&apos;ve Made
+            </h2>
+            <div className="grid md:grid-cols-2 grid-cols-1 gap-10">
+              <BeThereCard />
+              <FamilySearchCard />
+              <RecipeAppCard />
+              <InsertCompanyCard />
             </div>
           </div>
 
+          <div className="mb-8">
+            <h2 className="text-4xl font-semibold text-center mb-8">
+              Education
+            </h2>
+            <EducationCard />
+          </div>
+
+          <div className="mb-8">
+            <h2 className="text-4xl font-semibold text-center mb-8 flex flex-col gap-6">
+              <div>I Combine Nerd, Athlete, and Musician</div>
+              <div className="text-4xl flex flex-row gap-4 items-center justify-center text-muted-foreground">
+                <Glasses size={28} />
+                <Plus size={28} />
+                <PersonStanding size={28} />
+                <Plus size={28} />
+                <Piano size={28} />
+              </div>
+            </h2>
+            <div className="grid md:grid-cols-2 grid-cols-1 gap-10">
+              <DunkTeamCard />
+              <PianoCard />
+            </div>
+          </div>
+
+          <QuickLinks />
+
           <ContactCard />
-          <div className="flex flex-row gap-4 mx-auto items-center mt-12">
-            <SourceCodeButton />
+          <div className="flex flex-wrap gap-4 mx-auto items-center mt-12 justify-center">
+            <ShareResume />
             <LinkedInButton />
+            <SourceCodeButton />
           </div>
         </div>
       </main>

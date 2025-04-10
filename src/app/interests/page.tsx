@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <div className="w-full min-h-screen flex flex-col items-center">
-      <main className="w-full sm:max-w-5xl mb-20 px-8 mt-16 sm:mt-26">
+      <main className="w-full sm:max-w-4xl mb-20 px-8 mt-16 sm:mt-26">
         <div className="flex flex-col gap-8">
           <BackButton />
           <div className="sm:max-w-xl max-w-full mx-auto mt-8">

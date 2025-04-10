@@ -1,3 +1,4 @@
+import { Button } from '@/components/ui/button'
 import {
   ArrowRight,
   Award,
@@ -8,82 +9,97 @@ import {
 } from 'lucide-react'
 import Link from 'next/link'
 
-const Sidebar = () => {
+const QuickLinks = () => {
   return (
-    <div className="sticky top-10 flex flex-col gap-4">
+    <div className="flex flex-col gap-4">
       <div className="text-sm font-semibold text-muted-foreground">
-        About Me
+        More About Me
       </div>
-      <Link
-        href="/experience"
-        className="group flex flex-row items-center gap-1 w-fit"
-      >
-        <Newspaper
-          size={16}
-          className="mr-1 group-hover:text-gray-500 transition"
-        />
-        <div>Experience</div>
-        <ArrowRight
-          size={16}
-          className="group-hover:opacity-100 opacity-0 transition group-hover:translate-x-1"
-        />
-      </Link>
-      <Link
-        href="/education"
-        className="group flex flex-row items-center gap-1 w-fit"
-      >
-        <School
-          size={16}
-          className="mr-1 group-hover:text-amber-700 transition"
-        />
-        <div>Education</div>
-        <ArrowRight
-          size={16}
-          className="group-hover:opacity-100 opacity-0 transition group-hover:translate-x-1"
-        />
-      </Link>
+      <div className="flex flex-col md:flex-wrap gap-4 w-full">
+        <Link href="/experience" className="group w-fit">
+          <Button
+            variant="ghost"
+            className="flex flex-row items-center gap-1 w-fit cursor-pointer"
+          >
+            <Newspaper
+              size={16}
+              className="mr-1 group-hover:text-gray-500 transition"
+            />
+            <div>Experience</div>
+            <ArrowRight
+              size={16}
+              className="transition group-hover:translate-x-1"
+            />
+          </Button>
+        </Link>
+        <Link href="/education" className="group w-fit">
+          <Button
+            variant="ghost"
+            className="flex flex-row items-center gap-1 w-fit cursor-pointer"
+          >
+            <School
+              size={16}
+              className="mr-1 group-hover:text-amber-700 transition"
+            />
+            <div>Education</div>
+            <ArrowRight
+              size={16}
+              className="transition group-hover:translate-x-1"
+            />
+          </Button>
+        </Link>
 
-      <Link
-        href="/awards"
-        className="group flex flex-row items-center gap-1 w-fit"
-      >
-        <Award
-          size={16}
-          className="mr-1 group-hover:text-blue-500 transition"
-        />
-        <div>Awards and Certifications</div>
-        <ArrowRight
-          size={16}
-          className="group-hover:opacity-100 opacity-0 transition group-hover:translate-x-1"
-        />
-      </Link>
-      <Link
-        href="/values"
-        className="group flex flex-row items-center gap-1 w-fit"
-      >
-        <Heart size={16} className="mr-1 group-hover:text-red-500 transition" />
-        <div>Values</div>
-        <ArrowRight
-          size={16}
-          className="group-hover:opacity-100 opacity-0 transition group-hover:translate-x-1"
-        />
-      </Link>
-      <Link
-        href="/interests"
-        className="group flex flex-row items-center gap-1 w-fit"
-      >
-        <PersonStanding
-          size={16}
-          className="mr-1 group-hover:text-emerald-500 transition"
-        />
-        <div>Interests and Life Experiences</div>
-        <ArrowRight
-          size={16}
-          className="group-hover:opacity-100 opacity-0 transition group-hover:translate-x-1"
-        />
-      </Link>
+        <Link href="/awards" className="group w-fit">
+          <Button
+            variant="ghost"
+            className="flex flex-row items-center gap-1 w-fit cursor-pointer"
+          >
+            <Award
+              size={16}
+              className="mr-1 group-hover:text-blue-500 transition"
+            />
+            <div>Awards and Certifications</div>
+            <ArrowRight
+              size={16}
+              className="transition group-hover:translate-x-1"
+            />
+          </Button>
+        </Link>
+        <Link href="/interests" className="group w-fit">
+          <Button
+            variant="ghost"
+            className="flex flex-row items-center gap-1 w-fit cursor-pointer"
+          >
+            <PersonStanding
+              size={16}
+              className="mr-1 group-hover:text-emerald-500 transition"
+            />
+            <div>Interests and Life Experiences</div>
+            <ArrowRight
+              size={16}
+              className="transition group-hover:translate-x-1"
+            />
+          </Button>
+        </Link>
+        <Link href="/values" className="group w-fit">
+          <Button
+            variant="ghost"
+            className="flex flex-row items-center gap-1 w-fit cursor-pointer"
+          >
+            <Heart
+              size={16}
+              className="mr-1 group-hover:text-red-500 transition"
+            />
+            <div>Values</div>
+            <ArrowRight
+              size={16}
+              className="transition group-hover:translate-x-1"
+            />
+          </Button>
+        </Link>
+      </div>
     </div>
   )
 }
 
-export default Sidebar
+export default QuickLinks

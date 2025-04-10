@@ -13,11 +13,12 @@ const Hero = () => {
         Portfolio
       </div>
       <h1 className="text-5xl text-primary font-semibold">Derek Johnson</h1>
-      <div className="text-muted-foreground">
-        A dedicated software engineer and entrepreneur
+      <div className="">
+        An <i>adaptable</i> software engineer and entrepreneur
         {/* I take initiative where it&apos;s not required, but it makes a
               difference. */}
       </div>
+
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}

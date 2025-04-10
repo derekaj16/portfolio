@@ -11,7 +11,7 @@ const LinkedInButton = () => {
       className="cursor-pointer"
     >
       <Button
-        variant="ghost"
+        variant="outline"
         className="flex flex-row gap-5 pl-6 py-6 cursor-pointer"
       >
         <div className="relative">

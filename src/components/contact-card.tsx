@@ -82,7 +82,7 @@ export const ContactCard = () => {
                         <FormItem>
                           <FormLabel>Email</FormLabel>
                           <FormControl>
-                            <Input {...field} />
+                            <Input autoFocus {...field} />
                           </FormControl>
                           <FormMessage />
                         </FormItem>

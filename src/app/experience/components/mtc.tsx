@@ -2,6 +2,10 @@ import { LinkIcon } from 'lucide-react'
 import Link from 'next/link'
 import Image from 'next/image'
 import mtc from '../../../../public/img/mtc.png'
+import embark from '../../../../public/img/embark.png'
+import angularLogo from '../../../../public/img/angular.png'
+import jsLogo from '../../../../public/img/js.png'
+import { LogoCircle } from '@/components/logo-circle'
 
 const MTC = () => {
   return (
@@ -20,6 +24,11 @@ const MTC = () => {
           className="rounded-lg shadow-2xl"
           alt="FamilySearch Logo"
         />
+      </div>
+
+      <div className="flex flex-row gap-1 my-3">
+        <LogoCircle image={angularLogo} name="React" />
+        <LogoCircle image={jsLogo} name="Javascript" />
       </div>
 
       <div className="italic text-muted-foreground">
@@ -46,6 +55,11 @@ const MTC = () => {
           </Link>
         </div>
       </div>
+      <Image
+        src={embark}
+        alt="Screenshot of the vocabulary page of the embark app"
+        className="w-full rounded-lg mt-6"
+      />
     </div>
   )
 }
