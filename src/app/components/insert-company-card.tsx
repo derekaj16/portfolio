@@ -1,6 +1,6 @@
 import { Card, CardContent } from '@/components/ui/card'
 
-export const InsertCompanyCard = () => {
+const InsertCompanyCard = () => {
   return (
     <Card className="hover:border hover:border-cyan-500/50 transition relative">
       <CardContent className="px-4 flex flex-col justify-center items-center h-full">
@@ -20,3 +20,5 @@ export const InsertCompanyCard = () => {
     </Card>
   )
 }
+
+export default InsertCompanyCard

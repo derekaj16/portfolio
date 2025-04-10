@@ -5,7 +5,7 @@ import { CardLink } from '@/components/card-link'
 import { Award, ScrollText } from 'lucide-react'
 import { useIsMobile } from '@/hooks/use-mobile'
 
-export const EducationCard = () => {
+const EducationCard = () => {
   const isMobile = useIsMobile()
 
   return (
@@ -42,3 +42,5 @@ export const EducationCard = () => {
     </Card>
   )
 }
+
+export default EducationCard

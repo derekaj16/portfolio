@@ -16,7 +16,7 @@ import tsLogo from '../../../public/img/ts.png'
 import supabaseLogo from '../../../public/img/supabase.png'
 import flutterLogo from '../../../public/img/flutter.png'
 
-export const BeThereCard = () => {
+const BeThereCard = () => {
   return (
     <Card className="hover:border hover:border-cyan-500/50 transition relative">
       <CardContent className="p-0 pb-8">
@@ -52,3 +52,5 @@ export const BeThereCard = () => {
     </Card>
   )
 }
+
+export default BeThereCard

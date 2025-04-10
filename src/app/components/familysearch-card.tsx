@@ -14,7 +14,7 @@ import { LogoCircle } from '@/components/logo-circle'
 import reactLogo from '../../../public/img/react.png'
 import jsLogo from '../../../public/img/js.png'
 
-export const FamilySearchCard = () => {
+const FamilySearchCard = () => {
   return (
     <Card className="hover:border hover:border-cyan-500/50 transition relative">
       <CardContent className="p-0 pb-8">
@@ -46,3 +46,5 @@ export const FamilySearchCard = () => {
     </Card>
   )
 }
+
+export default FamilySearchCard

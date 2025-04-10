@@ -4,16 +4,16 @@ import {
   LinkedInButton,
   SourceCodeButton,
   ShareResume,
+  BeThereCard,
+  FamilySearchCard,
+  InsertCompanyCard,
+  RecipeAppCard,
+  PianoCard,
+  DunkTeamCard,
+  EducationCard,
 } from './components'
-import { BeThereCard } from './components/bethere-card'
-import { FamilySearchCard } from './components/familysearch-card'
-import { InsertCompanyCard } from './components/insert-company-card'
-import { RecipeAppCard } from './components/recipe-app-card'
 import { Glasses, PersonStanding, Piano, Plus } from 'lucide-react'
-import QuickLinks from './components/sidebar'
-import { PianoCard } from './components/piano-card'
-import { DunkTeamCard } from './components/dunkteam-card'
-import { EducationCard } from './components/education-card'
+import QuickLinks from './components/quick-links'
 
 export default function Home() {
   return (

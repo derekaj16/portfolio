@@ -11,7 +11,7 @@ import Image from 'next/image'
 import { CardLink } from '@/components/card-link'
 import dunkPic from '../../../public/img/dunk2.jpg'
 
-export const DunkTeamCard = () => {
+const DunkTeamCard = () => {
   return (
     <Card className="hover:border hover:border-cyan-500/50 transition relative">
       <CardContent className="p-0 pb-8">
@@ -46,3 +46,5 @@ export const DunkTeamCard = () => {
     </Card>
   )
 }
+
+export default DunkTeamCard

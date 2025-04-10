@@ -16,7 +16,7 @@ import chopinPic from '../../../public/img/chopin.jpg'
 import debussyPic from '../../../public/img/debussy.png'
 import bachPic from '../../../public/img/bach.jpg'
 
-export const PianoCard = () => {
+const PianoCard = () => {
   return (
     <Card className="hover:border hover:border-cyan-500/50 transition relative">
       <CardContent className="p-0 pb-8">
@@ -52,3 +52,5 @@ export const PianoCard = () => {
     </Card>
   )
 }
+
+export default PianoCard
