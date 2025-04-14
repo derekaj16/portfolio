@@ -11,6 +11,7 @@ import {
   PianoCard,
   DunkTeamCard,
   EducationCard,
+  WorkExperienceCard,
 } from './components'
 import {
   Glasses,
@@ -48,9 +49,12 @@ export default function Home() {
               <div className="text-4xl flex flex-row gap-4 items-center justify-center text-cyan-500">
                 <GraduationCap size={28} />
               </div>
-              Education
+              Good to Know
             </h2>
-            <EducationCard />
+            <div className="flex flex-col gap-6">
+              <WorkExperienceCard />
+              <EducationCard />
+            </div>
           </div>
 
           <div className="mb-12">

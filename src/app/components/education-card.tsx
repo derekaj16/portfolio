@@ -2,7 +2,7 @@
 
 import { Card, CardAction, CardContent } from '@/components/ui/card'
 import { CardLink } from '@/components/card-link'
-import { Award, ScrollText } from 'lucide-react'
+import { Award, BriefcaseBusiness, ScrollText } from 'lucide-react'
 import { useIsMobile } from '@/hooks/use-mobile'
 
 const EducationCard = () => {
