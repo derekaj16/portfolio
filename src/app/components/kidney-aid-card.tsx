@@ -63,9 +63,7 @@ const KidneyAid = () => {
             <CarouselNext />
           </Carousel>
 
-          <CardTitle className="text-2xl font-semibold">
-            Kidney Foundation
-          </CardTitle>
+          <CardTitle className="text-2xl font-semibold">KidneyAid</CardTitle>
           <CardDescription>
             Nutrition Diary and Nutrient Tracker
           </CardDescription>
