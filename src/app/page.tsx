@@ -42,8 +42,8 @@ export default function Home() {
               <BeThereCard />
               <FamilySearchCard />
               <RecipeAppCard />
-              <SantaCard />
               <KidneyAid />
+              <SantaCard />
               <InsertCompanyCard />
             </div>
           </div>
