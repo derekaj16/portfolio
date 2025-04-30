@@ -12,6 +12,8 @@ import {
   DunkTeamCard,
   EducationCard,
   WorkExperienceCard,
+  SantaCard,
+  KidneyAid,
 } from './components'
 import {
   Glasses,
@@ -40,6 +42,8 @@ export default function Home() {
               <BeThereCard />
               <FamilySearchCard />
               <RecipeAppCard />
+              <SantaCard />
+              <KidneyAid />
               <InsertCompanyCard />
             </div>
           </div>
