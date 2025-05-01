@@ -1,3 +1,5 @@
+'use client'
+
 import {
   Card,
   CardContent,
@@ -22,13 +24,20 @@ import kf5 from '../../../public/img/kf5.jpeg'
 import { LogoCircle } from '@/components/logo-circle'
 import pythonLogo from '../../../public/img/python.png'
 import djangoLogo from '../../../public/img/django.png'
+import Autoplay from 'embla-carousel-autoplay'
 
 const KidneyAid = () => {
   return (
     <Card className="hover:border hover:border-cyan-500/50 transition relative">
       <CardContent className="p-0 pb-8">
         <CardHeader>
-          <Carousel>
+          <Carousel
+            plugins={[
+              Autoplay({
+                delay: 4000,
+              }),
+            ]}
+          >
             <CarouselContent>
               <CarouselItem>
                 <Image
