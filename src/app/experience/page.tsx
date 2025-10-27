@@ -1,6 +1,7 @@
 import { BackButton } from '@/components/back-button'
 import { BeThere, FamilySearch, MTC } from './components'
 import { Metadata } from 'next'
+import TextAnalyzer from './components/text-analyzer'
 
 export const metadata: Metadata = {
   title: 'Experience',
@@ -19,6 +20,7 @@ export default function Page() {
             </h1>
             <div className="flex flex-col gap-24 my-8">
               <BeThere />
+              <TextAnalyzer />
               <FamilySearch />
               <MTC />
             </div>

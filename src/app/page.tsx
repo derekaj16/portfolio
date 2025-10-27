@@ -24,6 +24,7 @@ import {
   Plus,
 } from 'lucide-react'
 import QuickLinks from './components/quick-links'
+import TextAnalyzerCard from './components/text-analyzer-card'
 
 export default function Home() {
   return (
@@ -40,6 +41,7 @@ export default function Home() {
             </h2>
             <div className="grid md:grid-cols-2 grid-cols-1 gap-10">
               <BeThereCard />
+              <TextAnalyzerCard />
               <FamilySearchCard />
               <RecipeAppCard />
               <KidneyAid />

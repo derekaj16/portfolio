@@ -75,10 +75,10 @@ const BeThere = () => {
         </p>
 
         <p>
-          While on the BYU Dunk Team, a team that attends hundreds of events, I
-          noticed we kept switching scheduling softwares because they were
-          inadequate for our team&apos;s needs. I took initiative to build an
-          app that enabled our team to effectively collaborate and manage our
+          While on the BYU Dunk Team, a team that attends hundreds of events a
+          year, I noticed we kept switching scheduling softwares because they
+          were inadequate for our team&apos;s needs. I took initiative to build
+          an app that enabled our team to effectively collaborate and manage our
           events.
         </p>
 

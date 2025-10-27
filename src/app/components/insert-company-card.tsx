@@ -4,7 +4,7 @@ const InsertCompanyCard = () => {
   return (
     <Card className="hover:border hover:border-cyan-500/50 transition relative">
       <CardContent className="px-4 flex flex-col justify-center items-center h-full">
-        <div className="flex flex-row items-center w-full justify-center gap-2 md:mt-0 mt-4">
+        <div className="flex flex-row items-center w-full justify-center gap-2 md:mt-0 mt-4 py-8">
           <div className="text-6xl -translate-y-1">{`[`}</div>
           <div>
             <div className="text-2xl font-semibold text-center">
