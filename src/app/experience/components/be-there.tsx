@@ -13,9 +13,19 @@ import { LogoCircle } from '@/components/logo-circle'
 import reactLogo from '../../../../public/img/react.png'
 import tsLogo from '../../../../public/img/ts.png'
 import supabaseLogo from '../../../../public/img/supabase.png'
-import flutterLogo from '../../../../public/img/flutter.png'
+import expoLight from '../../../../public/img/expo-light.png'
+import expoDark from '../../../../public/img/expo-dark.png'
+
+// detect dark mode at render time (safe for SSR)
 
 const BeThere = () => {
+  const isDark =
+    typeof window !== 'undefined' &&
+    (document.documentElement.classList.contains('dark') ||
+      (window.matchMedia &&
+        window.matchMedia('(prefers-color-scheme: dark)').matches))
+  const expoImage = isDark ? expoDark : expoLight
+
   return (
     <div id="bethere" className="flex flex-col gap-2">
       <div className="flex flex-row items-center justify-between">
@@ -50,7 +60,7 @@ const BeThere = () => {
         <LogoCircle image={reactLogo} name="React" />
         <LogoCircle image={tsLogo} name="Typescript" />
         <LogoCircle image={supabaseLogo} name="Supabase" />
-        <LogoCircle image={flutterLogo} name="Flutter" />
+        <LogoCircle image={expoImage} name="Expo" />
       </div>
 
       <div className="italic text-muted-foreground">
@@ -91,13 +101,21 @@ const BeThere = () => {
           </Link>
           . The mobile app is built using{' '}
           <Link
-            href="https://flutter.dev/"
+            href="https://reactnative.dev"
             target="_blank"
             className="text-sky-500 hover:text-sky-400 transition"
           >
-            Flutter
+            React Native
+          </Link>{' '}
+          and{' '}
+          <Link
+            href="https://expo.dev"
+            target="_blank"
+            className="text-sky-500 hover:text-sky-400 transition"
+          >
+            Expo
           </Link>
-          . The backend services are all handled through{' '}
+          . The backend infrastructure is provided by{' '}
           <Link
             href="https://supabase.com/"
             target="_blank"
@@ -131,14 +149,14 @@ const BeThere = () => {
                   <Users size={16} />
                   Active Users
                 </div>
-                <div className="text-4xl font-semibold">54</div>
+                <div className="text-4xl font-semibold">60+</div>
               </div>
               <div className="flex flex-col gap-2 items-center">
                 <div className="flex flex-row gap-1 font-medium items-center">
                   <CheckSquare size={16} />
                   Events Managed
                 </div>
-                <div className="text-4xl font-semibold">500+</div>
+                <div className="text-4xl font-semibold">800+</div>
               </div>
             </div>
           </CardContent>

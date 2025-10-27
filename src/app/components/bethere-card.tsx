@@ -8,21 +8,31 @@ import {
   CardTitle,
 } from '@/components/ui/card'
 import Image from 'next/image'
-import dtDemo from '../../../public/img/dt-demo.gif'
+import bethere from '../../../public/img/bethere.png'
 import { CardLink } from '@/components/card-link'
 import { LogoCircle } from '@/components/logo-circle'
 import reactLogo from '../../../public/img/react.png'
 import tsLogo from '../../../public/img/ts.png'
 import supabaseLogo from '../../../public/img/supabase.png'
-import flutterLogo from '../../../public/img/flutter.png'
+import expoLight from '../../../public/img/expo-light.png'
+import expoDark from '../../../public/img/expo-dark.png'
 
 const BeThereCard = () => {
+  // detect dark mode at render time (safe for SSR)
+  const isDark =
+    typeof window !== 'undefined' &&
+    (document.documentElement.classList.contains('dark') ||
+      (window.matchMedia &&
+        window.matchMedia('(prefers-color-scheme: dark)').matches))
+
+  const expoImage = isDark ? expoDark : expoLight
+
   return (
     <Card className="hover:border hover:border-cyan-500/50 transition relative">
       <CardContent className="p-0 pb-8">
         <CardHeader>
           <Image
-            src={dtDemo}
+            src={bethere}
             className="w-full rounded-lg mb-2"
             alt="demo of BeThere"
           />
@@ -42,7 +52,7 @@ const BeThereCard = () => {
             <LogoCircle image={reactLogo} name="React" />
             <LogoCircle image={tsLogo} name="Typescript" />
             <LogoCircle image={supabaseLogo} name="Supabase" />
-            <LogoCircle image={flutterLogo} name="Flutter" />
+            <LogoCircle image={expoImage} name="Expo" />
           </div>
           <CardAction>
             <CardLink href="/experience#bethere">Learn more</CardLink>
