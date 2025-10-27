@@ -15,6 +15,7 @@ import tsLogo from '../../../../public/img/ts.png'
 import supabaseLogo from '../../../../public/img/supabase.png'
 import expoLight from '../../../../public/img/expo-light.png'
 import expoDark from '../../../../public/img/expo-dark.png'
+import { diffInYearsAndMonths } from '@/lib/utils'
 
 // detect dark mode at render time (safe for SSR)
 
@@ -25,6 +26,10 @@ const BeThere = () => {
       (window.matchMedia &&
         window.matchMedia('(prefers-color-scheme: dark)').matches))
   const expoImage = isDark ? expoDark : expoLight
+  const { years, months } = diffInYearsAndMonths(
+    new Date('2024-05-01'),
+    new Date()
+  )
 
   return (
     <div id="bethere" className="flex flex-col gap-2">
@@ -64,7 +69,9 @@ const BeThere = () => {
       </div>
 
       <div className="italic text-muted-foreground">
-        11 months • May 2024 - Present
+        {years > 0 && `${years} year${years > 1 ? 's' : ''}`}{' '}
+        {months > 0 && `${months} month${months > 1 ? 's' : ''}`} • May 2024 -
+        Present
       </div>
 
       <div className="flex flex-col gap-6">
@@ -217,7 +224,8 @@ const BeThere = () => {
                   <li>Greater accountability.</li>
                   <li>
                     Easier collaboration. Periodically, the team can review the
-                    calendar together to identify where help might be needed.{' '}
+                    calendar together to identify where help might be
+                    needed.{' '}
                   </li>
                   <li>
                     More time focusing on our skills as a team rather than
