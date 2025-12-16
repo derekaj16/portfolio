@@ -156,7 +156,7 @@ const BeThere = () => {
                   <Users size={16} />
                   Active Users
                 </div>
-                <div className="text-4xl font-semibold">60+</div>
+                <div className="text-4xl font-semibold">70+</div>
               </div>
               <div className="flex flex-col gap-2 items-center">
                 <div className="flex flex-row gap-1 font-medium items-center">
