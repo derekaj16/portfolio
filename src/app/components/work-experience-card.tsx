@@ -16,11 +16,13 @@ const WorkExperienceCard = () => {
             <BriefcaseBusiness size={isMobile ? 28 : 46} />
           </div>
           <div className="flex flex-col gap-2 justify-center">
-            <div>Software and Web Dev</div>
+            <div>Software, Web, and App Dev</div>
             <div className="text-lg font-medium">
-              2+ Years of Real Work Experience
+              3+ Years of Real Work Experience
             </div>
-            <div className="text-muted-foreground">FamilySearch, MTC, BYU</div>
+            <div className="text-muted-foreground">
+              BeThere, Sunwest Bank, FamilySearch, MTC, BYU
+            </div>
           </div>
         </div>
 

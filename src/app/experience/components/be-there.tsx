@@ -1,3 +1,5 @@
+'use client'
+
 import { CheckSquare, LinkIcon, Users } from 'lucide-react'
 import Link from 'next/link'
 import {
@@ -16,16 +18,14 @@ import supabaseLogo from '../../../../public/img/supabase.png'
 import expoLight from '../../../../public/img/expo-light.png'
 import expoDark from '../../../../public/img/expo-dark.png'
 import { diffInYearsAndMonths } from '@/lib/utils'
+import { useTheme } from 'next-themes'
 
 // detect dark mode at render time (safe for SSR)
 
 const BeThere = () => {
-  const isDark =
-    typeof window !== 'undefined' &&
-    (document.documentElement.classList.contains('dark') ||
-      (window.matchMedia &&
-        window.matchMedia('(prefers-color-scheme: dark)').matches))
-  const expoImage = isDark ? expoDark : expoLight
+  const { resolvedTheme } = useTheme()
+  const isDark = resolvedTheme === 'dark'
+  const expoImage = isDark ? expoLight : expoDark
   const { years, months } = diffInYearsAndMonths(
     new Date('2024-05-01'),
     new Date()

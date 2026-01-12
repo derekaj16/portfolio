@@ -16,6 +16,7 @@ import {
   KidneyAid,
 } from './components'
 import {
+  BriefcaseBusiness,
   Glasses,
   GraduationCap,
   Palette,
@@ -53,12 +54,23 @@ export default function Home() {
           <div className="mb-12">
             <h2 className="text-4xl font-semibold text-center mb-12 flex flex-col gap-6">
               <div className="text-4xl flex flex-row gap-4 items-center justify-center text-cyan-500">
-                <GraduationCap size={28} />
+                <BriefcaseBusiness size={28} />
               </div>
-              Good to Know
+              Work Experience
             </h2>
             <div className="flex flex-col gap-6">
               <WorkExperienceCard />
+            </div>
+          </div>
+
+          <div className="mb-12">
+            <h2 className="text-4xl font-semibold text-center mb-12 flex flex-col gap-6">
+              <div className="text-4xl flex flex-row gap-4 items-center justify-center text-cyan-500">
+                <GraduationCap size={28} />
+              </div>
+              Education
+            </h2>
+            <div className="flex flex-col gap-6">
               <EducationCard />
             </div>
           </div>

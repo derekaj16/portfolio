@@ -44,7 +44,7 @@ const TextAnalyzer = () => {
         <LogoCircle image={dockerLogo} name="Docker" />
       </div>
 
-      <div className="italic text-muted-foreground">July 2024</div>
+      <div className="italic text-muted-foreground">July 2025</div>
 
       <div className="flex flex-col gap-6">
         <p>

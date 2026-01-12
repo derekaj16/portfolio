@@ -6,7 +6,7 @@ const DunkTeam = () => {
     <div id="dunkteam" className="flex flex-col gap-2">
       <PersonStanding size={32} className="text-cyan-500" />
       <h2 className="text-xl sm:text-2xl font-semibold">The BYU Dunk Team</h2>
-      <div className="text-muted-foreground italic">June 2021 - Present</div>
+      <div className="text-muted-foreground italic">June 2021 - June 2025</div>
       <p>
         I was a member of an acrobatic team at BYU that specialized in
         trampoline dunking, stunting, and flipping. We performed at hundreds of
