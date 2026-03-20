@@ -1,5 +1,5 @@
 import { BackButton } from '@/components/back-button'
-import { BeThere, FamilySearch, MTC } from './components'
+import { BeThere, FamilySearch, MTC, Sunwest } from './components'
 import { Metadata } from 'next'
 import TextAnalyzer from './components/text-analyzer'
 // import Sunwest from './components/sunwest'
@@ -21,7 +21,7 @@ export default function Page() {
             </h1>
             <div className="flex flex-col gap-24 my-8">
               <BeThere />
-             
+              <Sunwest />
               <TextAnalyzer />
               <FamilySearch />
               <MTC />

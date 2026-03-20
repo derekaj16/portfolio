@@ -5,12 +5,10 @@ import python from '../../../../public/img/python.png'
 import sf from '../../../../public/img/salesforce.jpg'
 import { diffInYearsAndMonths } from '@/lib/utils'
 
-// detect dark mode at render time (safe for SSR)
-
 const Sunwest = () => {
   const { years, months } = diffInYearsAndMonths(
     new Date('2025-06-01'),
-    new Date()
+    new Date(),
   )
 
   return (
@@ -57,31 +55,29 @@ const Sunwest = () => {
 
       <div className="flex flex-col gap-6">
         <p>
-          Streamlined lead generation by developing Python scripts and custom
-          WordPress plugins that unified multiple contact forms in a reusable,
-          Salesforce-integrated system – improving data consistency.
+          Designed and implemented an automation to generate, populate, and
+          manage loan documents – reducing manual processing time by 30 minutes
+          per customer.
         </p>
         <p>
-          Automated customer engagement tracking with a Python service that
-          pulls daily email campaign data and logs activities in Salesforce,
-          giving sales staff visibility into recent contacts and improving
-          follow-up timing.
+          Streamlined lead generation by writing scripts and custom plugins that
+          unified multiple contact forms into a reusable form, improving data
+          consistency.
+        </p>
+        <p>
+          Automated customer engagement tracking by writing a script that pulls
+          daily email campaign data and logs activities, giving sales staff
+          visibility into recent contacts and improving follow-up timing.
         </p>
         <p>
           Improved Salesforce deployment reliability by refactoring Apex tests
           and raising the automated test pass rate from 40% to 100%.
         </p>
-        <p>
+        {/* <p>
           Built an internal AI adoption site to help employees understand
           available AI tools, use cases and onboarding resources – a
           self-service site now used by the entire company. (500 employees)
-        </p>
-        <p>
-          Designed and implemented a Salesforce automation using Azure AI
-          Foundry, Lightning Web Components, and Azure Functions to
-          auto-generate, populate, and manage preflight PDF documents – reducing
-          manual processing time by 30 minutes per customer.
-        </p>
+        </p> */}
       </div>
     </div>
   )
