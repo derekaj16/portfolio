@@ -27,6 +27,10 @@ import {
 import QuickLinks from './components/quick-links'
 import TextAnalyzerCard from './components/text-analyzer-card'
 
+// TODO: Cache Components adoption. Refactor this route so this opt-out can be removed.
+// See: https://nextjs.org/docs/app/guides/migrating-to-cache-components
+export const instant = false;
+
 export default function Home() {
   return (
     <div className="w-full min-h-screen flex flex-col items-center">

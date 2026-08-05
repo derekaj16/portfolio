@@ -2,6 +2,11 @@ import { BackButton } from '@/components/back-button'
 import { BeThere, FamilySearch, MTC, Sunwest } from './components'
 import { Metadata } from 'next'
 import TextAnalyzer from './components/text-analyzer'
+
+// TODO: Cache Components adoption. Refactor this route so this opt-out can be removed.
+// See: https://nextjs.org/docs/app/guides/migrating-to-cache-components
+export const instant = false;
+
 // import Sunwest from './components/sunwest'
 
 export const metadata: Metadata = {

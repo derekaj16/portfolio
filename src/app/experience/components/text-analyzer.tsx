@@ -22,11 +22,11 @@ const TextAnalyzer = () => {
           <div className="flex flex-row gap-3 items-center">
             <LinkIcon size={16} className="text-muted-foreground" />
             <Link
-              href="https://www.sustainability-stages.life/upload"
+              href="https://www.sustainability-stages.life/analyze"
               target="_blank"
               className="text-sky-500 hover:text-sky-400 transition"
             >
-              https://www.sustainability-stages.life/upload
+              https://www.sustainability-stages.life/analyze
             </Link>
           </div>
         </div>
