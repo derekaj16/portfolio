@@ -1,3 +1,5 @@
+'use client'
+
 import Image from 'next/image'
 import sunwest from '../../../../public/img/sunwest.png'
 import { LogoCircle } from '@/components/logo-circle'
