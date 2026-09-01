@@ -7,7 +7,6 @@ import {
   BeThereCard,
   FamilySearchCard,
   InsertCompanyCard,
-  RecipeAppCard,
   PianoCard,
   DunkTeamCard,
   EducationCard,
@@ -26,6 +25,7 @@ import {
 } from 'lucide-react'
 import QuickLinks from './components/quick-links'
 import TextAnalyzerCard from './components/text-analyzer-card'
+import VukuCard from './components/vuku-card'
 
 export default function Home() {
   return (
@@ -41,10 +41,10 @@ export default function Home() {
               Stuff I&apos;ve Made
             </h2>
             <div className="grid md:grid-cols-2 grid-cols-1 gap-10">
+              <VukuCard />
               <BeThereCard />
               <TextAnalyzerCard />
               <FamilySearchCard />
-              <RecipeAppCard />
               <KidneyAid />
               <SantaCard />
               <InsertCompanyCard />
